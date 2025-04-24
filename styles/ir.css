@@ -30,10 +30,41 @@
 }
 /* 레이아웃 위치/정렬 기법 inline-block, float, flex, grid, position */
 #wrap main .bg .ir_list {
-    overflow:hidden; /* overflow 안주면 아래 여백이 없어진다! */
+    /* overflow:hidden; */ /* overflow 안주면 아래 여백이 없어진다! */
+    width:1280px; height:250px; /* 높이를 안주면 그림자가 안보임. overflow 하면 영역만큼만 보이기 때문에 위아래의 그림자가 안보이게 됨 */
+    margin:0 auto;
+    padding:0 80px;
 }
 #wrap main .bg .ir_list a {
     float:left;
+    background-color:#f5f5f5;
+    border:1px solid #ddd;
+    width:260px; height:250px;
+    margin-right:26.67px;
+    text-align:left; padding:20px;
+    background-repeat:no-repeat;
+    background-position:95% 90%;
 }
-#wrap main .bg .ir_list a h2 {}
-#wrap main .bg .ir_list a p {}
+#wrap main .bg .ir_list a:hover {/* a에 마우스를 올렸을 때 디자인 */
+    background-color:#fff;
+    border:1px solid #138FBF;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+}
+#wrap main .bg .ir_list a:first-child {background-image:url(../images/ir/ir_01.png);}
+#wrap main .bg .ir_list a:nth-child(2) {background-image:url(../images/ir/ir_02.png);}
+#wrap main .bg .ir_list a:nth-child(3) {background-image:url(../images/ir/ir_03.png);}
+#wrap main .bg .ir_list a:last-child {
+    margin-right:0;
+    background-image:url(../images/ir/ir_04.png)
+} /* 항목이 추가되었을 경우를 대비하여 막내로 하는게 낫다! */
+/* #wrap main .bg .ir_list a:nth-child(4) {float:right;} */
+#wrap main .bg .ir_list a h2 {
+    margin-bottom:10px;
+    font-size:1.75rem;
+    font-weight:700;
+    line-height:1.3;
+}
+#wrap main .bg .ir_list a p {
+    font-weight:500;
+    line-height:1.3;
+}
