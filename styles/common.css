@@ -2,52 +2,110 @@
 /* 이 css파일에는 header랑 footer만 존재한다!!! */
 #wrap {}
 /* ==================== header ==================== */
-#wrap header {}
+#wrap header {
+    background-color:aqua;
+    height:92px; /* 높이만 주게되면 높이가 정해지지만 자식정렬은 안되어 있기 때문에 아래 내용이 따라 올라온다. */
+    padding:0 60px;
+    /* container(header) item(h1,nav,right_menu) */
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav .gnb {}
-#wrap header nav .gnb li {}
-#wrap header nav .gnb li a {
-    font-size:1.125rem; font-weight:600;
+#wrap header nav {
+    background-color:lime;
 }
-#wrap header .right_menu {}
-#wrap header .right_menu li {}
+#wrap header nav .gnb {
+    /* container(.gnb) item(li) */
+    display:flex; flex-flow:row nowrap;
+}
+#wrap header nav .gnb li {margin-right:60px;}
+#wrap header nav .gnb li:last-child {margin-right:0;}
+#wrap header nav .gnb li a {
+    border:1px solid red;
+    font-size:1.125rem; font-weight:600;
+    display:block;
+    height:92px;
+    line-height:92px;
+}
+#wrap header .right_menu {
+    background-color: yellow;
+    display:flex; flex-flow:row nowrap;
+}
+#wrap header .right_menu li {margin-left:30px;}
+/* 포토샵, 피그마에서 디자인한 구분선 디자인은 CSS에서 가상선택자 after 또는 before를 이용하여 면으로 변경하여 디자인한다. */
+#wrap header .right_menu li:first-child::after {
+    content:''; /* CSS에서는 해당 요소를 선이 아닌 면으로 보기 때문에 그냥 |를 쓰면 안된다. */
+    display:inline-block;
+    width:1px; height:20px;
+    background-color:#000;
+    margin-left:30px;
+}
+#wrap header .right_menu li:first-child {
+    line-height:24px; margin-left:0;
+    display: flex; flex-flow:row nowrap;
+    align-items: center;
+}
 #wrap header .right_menu li a {
     font-size:0.75rem; letter-spacing:0;
 }
 #wrap header .right_menu li a img {}
 /* ==================== footer ==================== */
+#wrap .footer_full_w {/* index에는 해당 이름의 클래스가 없어서 크기가 작은것! */
+    width:100%; padding:50px 60px;
+}
 #wrap footer {
+    background-color:aqua;
+    width:1280px; margin:0 auto;
     padding:50px 0;
 }
 #wrap footer #top_wrap {
+    background-color:lime;
     margin-bottom:12px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
 }
-#wrap footer #top_wrap .left {}
-#wrap footer #top_wrap .left a {
-    margin-right:60px;
+#wrap footer #top_wrap .left {
+    background-color:orange;
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
 }
+#wrap footer #top_wrap .left a {margin-right:60px;}
 #wrap footer #top_wrap .left a:nth-child(1) {
     color:#138FBF; font-weight:700;
 }
 #wrap footer #top_wrap .left a:nth-child(2) {
     color:#DA2128; font-weight:700;
 }
+#wrap footer #top_wrap .left a:last-child {margin-right:0;}
 #wrap footer #top_wrap .left a img {}
-#wrap footer #top_wrap .right {}
+#wrap footer #top_wrap .right {
+    background-color: yellow;
+    display:flex; flex-flow:row nowrap;
+    align-items: center;
+}
 /* ==================footer 패밀리사이트+사이트맵 공통 */
 #wrap footer #top_wrap .right .site {
     font-size:0.75rem;
     border:1px solid #EEEEEE;
-    padding:7px 10px;
-    display:inline-block;
+    padding:7px 10px; height:26px;
 }
 /* ==================footer 패밀리사이트+사이트맵 개별 */
-#wrap footer #top_wrap .right select {}
+#wrap footer #top_wrap .right select {
+    background:#fff url(../images/down-arrow.png) no-repeat 95% center;
+    width:185px; outline:none;
+}
 #wrap footer #top_wrap .right select option {}
-#wrap footer #top_wrap .right .site_map {}
+#wrap footer #top_wrap .right .site_map {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#fff;
+    width:123px;
+    margin-left:20px;
+}
 #wrap footer #top_wrap .right .site_map span {}
 #wrap footer #top_wrap .right .site_map img {}
 #wrap footer #bottom_wrap {}
@@ -56,7 +114,5 @@
     font-size:0.875rem;
     color:#808080;
 }
-#wrap footer #bottom_wrap address {
-    margin-bottom:50px;
-}
+#wrap footer #bottom_wrap address {margin-bottom:50px;}
 #wrap footer #bottom_wrap p {}
