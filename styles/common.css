@@ -61,6 +61,19 @@
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li:last-child {margin-bottom:0;}
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {color:#555;}
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a:hover {color:#36B4E5;}
+/* ============================================브랜드 서브메뉴 */
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a h2 {
+    border:1px solid aqua;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a h2+p {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a p:last-child {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a img {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .brand_lnb-depth2 {
+    background-color:pink;
+    width:276px; display:flex; flex-flow:row wrap;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .brand_lnb-depth2 li a {}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .brand_lnb-depth2 li img {}
 /* ============================================우측 보조메뉴 */
 #wrap header .right_menu {
     background-color: yellow;
