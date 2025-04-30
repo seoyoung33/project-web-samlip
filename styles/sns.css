@@ -20,43 +20,44 @@ main h1 {
     font-size:3.75rem;
     font-weight:800;
 }
-main p {
+main > p {
     margin-bottom:60px;
     font-size:1.125rem;
     font-weight:600;
     color:#808080;
 }
-main #sns_wrap {
+main .bg {
     background-color:#fcfcfc;
+    /* width:100%; */
     padding:80px 0;
-    width:100%;
-    display:flex; flex-flow:row nowrap;
-    justify-content:center;
 }
-main #sns_wrap a:first-child {margin-left:0;}
-main #sns_wrap a {
+main .bg #sns_wrap {
+    width:1280px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .bg #sns_wrap a {
     border:1px solid #EEEEEE;
     background-color:#f5f5f5;
     width:400px; height:350px;
     display:flex; flex-flow:column nowrap;
     justify-content:center;
-    align-items:center;
-    margin-left:40px;
 }
-main #sns_wrap a:hover {
+main .bg #sns_wrap a:last-child {}
+main .bg #sns_wrap a:hover {
     background-color:#fff;
     border:1px solid #36B4E5;
     box-shadow:0 0 30px rgba(0,0,0,0.3);
 }
-main #sns_wrap a img {width:100px; height:100px;}
-main #sns_wrap a em {
+main .bg #sns_wrap a p {}
+main .bg #sns_wrap a p img {width:100px; height:100px;}
+main .bg #sns_wrap a h2 {
     margin:20px 0;
     font-size:1.75rem;
     font-weight:700;
 }
-main #sns_wrap a span {
+main .bg #sns_wrap a h2+p {
     color:#808080;
     line-height:1.5em;
     font-size:0.875rem;
-
 }
