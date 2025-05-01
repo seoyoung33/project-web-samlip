@@ -1,1 +1,120 @@
 /* index.css 메인 첫 페이지의 <main> */
+main {}
+/* ==========================1. 광고배너 */
+main .ad_wrap {}/* 슬라이드 + 슬라이드 버튼 */
+main .ad_wrap .ad_container {} /* 슬라이드들 그룹 */
+main .ad_wrap .ad_container .ad { /* 개별 슬라이드 */
+    display:none; /* 모두 숨기기 */
+    height:800px; /* 가로넓이는 기본값이라 굳이 안해도 됨 */
+    background-position:center; /* 화면크기 조절시 이미지 중앙이 따라오도록 설정. 모든 이미지가 동일하므로 공통값 .ad에 넣어줌 */
+    position:relative;
+}
+main .ad_wrap .ad_container .ad .ad_txt {
+    width:1800px;/*  margin:0 auto; */
+    position:absolute; bottom:75px; left:50%;
+    /* 크기를 조정해놨으니 중간정렬만 하면 되는데, 글자 정렬이 왼쪽 상단이 기본값이라 글자 자체가 완전 가운데로 감. 아래 CSS속성을 이용하기 */
+    transform:translateX(-50%);/* absolute로 위치 설정 시 요소를 가운데 배치하려면 left:50%와 translate(-50%)를 함께 이용해야 배치할 수 있다. 단, 요소가 absolute가 아닌 평범한 요소라면 가운데 배치 시 margin:0 auto를 사용하면 된다. */
+}
+main .ad_wrap .ad_container .ad .ad_txt h2 {
+    margin-bottom:30px;
+    font-size:4.375rem; font-weight:700;
+    letter-spacing:0;
+}
+main .ad_wrap .ad_container .ad .ad_txt p {
+    font-size:1.25rem;
+    line-height:1.5; letter-spacing:0;
+}
+main .ad_wrap .ad_btn {
+    text-align: center;
+    padding:34px 0;
+}
+main .ad_wrap .ad_btn #ad_prev {
+    margin-right:10px;
+}
+main .ad_wrap .ad_btn #ad_prev img {}
+main .ad_wrap .ad_btn #ad_next {
+    transform:scaleX(-1);/* x값으로 동일한 모양으로 반전했다는 뜻 */
+}
+main .ad_wrap .ad_btn #ad_next img {}
+/* ===============개별 선택자 */
+main .ad_wrap .ad_container .ad1 {
+    display:block;
+    background-image:url(../images/ad_01.jpg);
+}
+main .ad_wrap .ad_container .ad2 {}
+main .ad_wrap .ad_container .ad3 {}
+main .ad_wrap .ad_container .ad4 {}
+main .ad_wrap .ad_container .ad5 {}
+/* ==========================2. 뉴스&공지사항 */
+/* ========2. 뉴스&공지 공통========= */
+main .news_all {text-align:center; padding:50px 0;}
+main .news_all > h2 {
+    font-size:3.125rem; font-weight:700;
+}
+main .news_all > p {margin:20px 0;}
+main .news_all .news_wrap {
+    border:5px solid red;
+    width:1370px; overflow:hidden; /* 더 흐르는 영역은 안볼래 */
+    margin:0 auto; /* 중앙으로 보내기 위함 */
+}
+main .news_all .news_wrap .news_container {
+    border:5px solid blue;
+    display:flex; flex-flow:row nowrap;
+    width:max-content;
+    text-align:left; padding:100px 0 50px;
+}
+main .news_all .news_wrap .news_container .news {
+    background-color:yellow;
+    width:311px; height:287px;
+    margin-right:42px;
+    border:1px solid #000;
+    position:relative;
+}
+main .news_all .news_wrap .news_container .news:hover {
+    border:1px solid #138FBF;
+}
+main .news_all .news_wrap .news_container .news a {}
+main .news_all .news_wrap .news_container .news a p {
+    overflow:hidden;
+}
+main .news_all .news_wrap .news_container .news a p img {}
+main .news_all .news_wrap .news_container .news a h3 {
+    margin:20px 20px 0 20px;
+    font-size:1.125rem; font-weight:600;
+}
+main .news_all .news_wrap .news_container .news .date {
+    margin-top:40px; color:#555;
+    position:absolute; bottom:20px; left:20px;
+}
+main .news_all .news_wrap .news_btn {}
+main .news_all .news_wrap .news_btn #news_prev {}
+main .news_all .news_wrap .news_btn #news_prev img {}
+main .news_all .news_wrap .news_btn #news_next {
+    transform:scaleX(-1); margin:20px 0 20px 10px;
+}
+main .news_all .news_wrap .news_btn #news_next img {}
+main .news_all .all_news {
+    /* display:inline-block; */
+    border:1px solid #000;
+    padding:15px 50px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center; /* 교차축이 한줄이니까 content아니고 items 다!! */
+    width:max-content; margin:0 auto;
+    background-color:#fff;
+}
+main .news_all .all_news img {}
+main .news_all .all_news em {margin-left:10px;}
+/* =====================all_news 버튼 hover 효과 */
+main .news_all .all_news:hover {filter:invert(100%);}
+main .news_all .all_news:hover img {}
+main .news_all .all_news:hover em {}
+/* ========2. 뉴스&공지 개별========= */
+main .news_all .news_wrap .news_container .news1 {}
+main .news_all .news_wrap .news_container .news2 {}
+main .news_all .news_wrap .news_container .news3 {}
+main .news_all .news_wrap .news_container .news4 {}
+main .news_all .news_wrap .news_container .news5 {}
+main .news_all .news_wrap .news_container .news6 {}
+main .news_all .news_wrap .news_container .news7 {}
+main .news_all .news_wrap .news_container .news8 {}
