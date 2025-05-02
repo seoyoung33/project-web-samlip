@@ -16,15 +16,15 @@ main .path > a {}
 main .path > a:first-child {margin-left:0;}
 main .path img {}
 main h1 {
-    margin:60px 0 20px;
+    margin:80px 0 20px;
     font-size:3.75rem;
     font-weight:800;
 }
 main > p {
-    margin-bottom:60px;
+    margin-bottom:60px;/* 
     font-size:1.125rem;
     font-weight:600;
-    color:#808080;
+    color:#808080; */
 }
 main .bg {
     background-color:#fcfcfc;

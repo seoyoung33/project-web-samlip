@@ -12,6 +12,15 @@
     <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 우측 pagenation 고정영역 -->
+    <div class="right_nav">
+        <a href="#ad_section"><em>Main</em><span></span></a>
+        <a href="#news_section"><em>News & Noice</em><span></span></a>
+        <a href="#studio_section"><em>Now @ Samlip Studio</em><span></span></a>
+        <a href="#brands_secion"><em>Our Brands</em><span></span></a>
+        <a href="#company_info"><em>Company Info.</em><span></span></a>
+    </div>
+    <!-- 삼립 메인페이지 시작 영역 -->
     <div id="wrap">
         <header>
             <h1>
@@ -149,7 +158,7 @@
         </header>
         <main>
             <!-- 1. 광고배너 -->
-            <section class="ad_wrap">
+            <section class="ad_wrap" id="ad_section">
                 <!-- 1-1. 광고 개별그룹 -->
                 <div class="ad_container">
                     <div class="ad ad1">
@@ -190,7 +199,7 @@
                 </div>
             </section>
             <!-- 2. 뉴스&공지사항 -->
-            <section class="news_all">
+            <section class="news_all" id="news_section">
                 <h2>News & Notice</h2>
                 <p>SPC Samlip news updates, from a company that is alsways happy.</p>
                 <section class="news_wrap">
@@ -263,9 +272,277 @@
                 </a>
             </section>
             <!-- 3. 삼립 스튜디오 -->
+            <section class="studio_wrap" id="studio_section">
+                <h2>Now @ Samlip Studio</h2>
+                <p>SPC Studio, SPC Samlip’s YouTube channel where you can eat, watch, and digest.</p>
+                <!-- 유튜브 채널 미리보기 바로 보이는 영역 -->
+                <div class="studio_list">
+                    <a href="#"><img src="./images/youtube/youtube1.jpg" alt="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해! 동영상보기"></a><!-- 첫째 -->
+                    <a href="#"><img src="./images/youtube/youtube1.jpg" alt="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해! 동영상보기"></a>
+                    <a href="#"><img src="./images/youtube/youtube1.jpg" alt="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해! 동영상보기"></a>
+                    <a href="#"><img src="./images/youtube/youtube1.jpg" alt="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해! 동영상보기"></a>
+                    <a href="#"><img src="./images/youtube/youtube2.jpg" alt="[삼립LOG] 삼립 빵순이의 하루. 세일즈마케터(영업) 하루업무 동영상보기"></a>
+                    <a href="#"><img src="./images/youtube/youtube2.jpg" alt="[삼립LOG] 삼립 빵순이의 하루. 세일즈마케터(영업) 하루업무 동영상보기"></a>
+                    <a href="#"><img src="./images/youtube/youtube2.jpg" alt="[삼립LOG] 삼립 빵순이의 하루. 세일즈마케터(영업) 하루업무 동영상보기"></a>
+                    <a href="#"><img src="./images/youtube/youtube2.jpg" alt="[삼립LOG] 삼립 빵순이의 하루. 세일즈마케터(영업) 하루업무 동영상보기"></a>
+                </div>
+                <!-- 위 미리보기 클릭 시 열리는 영역 -->
+                <div class="studio_open">
+                    <div class="open_container">
+                        <button type="button" class="close" title="close(ESC)">X</button>
+                        <div class="youtube"> <!-- iframe : 다른 사이트에 있는 소스를 퍼와서 내 사이트에 넣고싶을 때 사용하는 태그 -->
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- 첫째 -->
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/KzxvoWVdLMA" title="[삼립LOG]삼립 빵순이의 하루🍞 세일즈마케터(영업) 하루업무 보기🔍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/KzxvoWVdLMA" title="[삼립LOG]삼립 빵순이의 하루🍞 세일즈마케터(영업) 하루업무 보기🔍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/KzxvoWVdLMA" title="[삼립LOG]삼립 빵순이의 하루🍞 세일즈마케터(영업) 하루업무 보기🔍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/KzxvoWVdLMA" title="[삼립LOG]삼립 빵순이의 하루🍞 세일즈마케터(영업) 하루업무 보기🔍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- (아래) 고정링크 -->
+                <a href="#" class="youtube_link">
+                    <img src="./images/youtube/youtube_icon.png" alt="">
+                    <em>View on YouTube</em>
+                </a>
+            </section>
             <!-- 4. 삼립 브랜드 -->
+            <section class="brands_all" id="brands_secion">
+                <h2>Our Brands</h2>
+                <p>Introducion of SPC Samlip brands that are loved all throughout different business fields.</p>
+                <div class="brands_wrap"> <!-- 1. 슬라이드가 실제 보이는 영역 -->
+                    <div class="brands_container"> <!-- 2. 슬라이드 전체 묶는 가로영역 (실제 움직이는 부분) -->
+                        <ul class="brands_slide1"> <!-- 3. 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brands_slide2"> <!-- 3. 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_1.png" alt="피그인더가든 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>피그인더가든</h3>
+                                    <P>균형잡힌 맛과 영양,<br>나만의 한끼 샐러드</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4. 첫번째 로고 영역(반복*12) -->
+                                <p class="logo"><img src="./images/brands_2.png" alt="레디비 홈페이지 바로가기"></p>
+                                <!-- li 마우스(hover) 시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <P>레디비는 집에서 간편하게 갓 구워<br>즐기는<br>홈베이커리 브랜드 입니다.</P>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="brands_btn">
+                        <button type="button" id="brands_prev"><img src="./images/ad_arrow.png" alt=""></button>
+                        <button type="button" id="brands_next"><img src="./images/ad_arrow.png" alt=""></button>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>
+        <footer id="company_info">
             <div id="top_wrap">
                 <div class="left">
                     <a href="#">개인정보처리방침</a>
