@@ -1,9 +1,13 @@
 /* index, 모든 sub에 적용할 공통 header, footer common.css */
 /* 이 css파일에는 header랑 footer만 존재한다!!! */
-#wrap {}
+#wrap {
+    min-width:1900px; /* pc버전이기 때문! 스크롤 크기 때문에 가로스크롤이 생기니까 조금 작게 만들어주기 */
+}
 /* ==================== header ==================== */
 #wrap header {
-    width:100%; height:92px; /* 높이만 주게되면 높이가 정해지지만 자식정렬은 안되어 있기 때문에 아래 내용이 따라 올라온다. */
+    min-width:1200px; width:100%; /* 사용자 편의성을 고려해서 필요한 부분에 최소값을 넣어주면 좋다! */
+    height:92px; /* position을 줬기 때문에 너비 값을 지정해줘야 한다 */
+    /* 높이만 주게되면 높이가 정해지지만 자식정렬은 안되어 있기 때문에 아래 내용이 따라 올라온다. */
     background-color:#fff;
     padding:0 60px;
     /* container(header) item(h1,nav,right_menu) */
